@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Picadoo Experiments</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+  <style type="text/css">
+
+  
+    body{
+      /*font-family: 'Amatic SC', cursive;*/
+      font-family: 'Permanent Marker', cursive;
+      background-color: #ffe7e7;
+    }
+
+    .content h1{
+      padding-top: 100px;
+      padding-bottom: 3em;
+      text-align: center;
+      
+    }
+  </style>
+</head>
+<body>
+  <!-- start navigation -->
+  <nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item is-size-1" href="https://picadoo.co.za/style">
+      <!-- <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"> -->
+      Picadoo <span class="is-size-6"> experiments</span>
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <!-- <div class="navbar-start">
+      <a class="navbar-item" href="https://bulma.io/">
+        Home
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="/documentation/overview/start/">
+          Docs
+        </a>
+   
+      </div>
+    </div> -->
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+              <span class="icon">
+                <!-- <i class="fa fa-twitter"></i> -->
+              </span>
+              <span>
+                Book Stylist
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-primary" href="https://github.com/jgthms/bulma/archive/0.5.1.zip">
+              <span class="icon">
+                <!-- <i class="fa fa-download"></i> -->
+              </span>
+              <span>Store</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+	<!-- <div class="pageloader"><span class="title">Pageloader</span></div> -->
+	
+	<section>
+		<div class="container">
+			<div class="columns is-5" style="padding-top: 3em;">
+        <!-- first column -->
+				<div class="column">
+        <div data-src="pctgn-54d6d66f"><script src="https://pictogon.com/js/pictogon.js"></script></div>
+				</div>
+
+        <!-- second column -->
+				<div class="column">
+          <div class="content" style="margin: 0 100px 0 100px; color: black;">
+					<h1 class="tlt has-text-weight-bold" data-in-effect="fadeInUp">Press on her hair or earrings</h1><span></span></div>
+         
+           <p class="tlt has-text-weight-light" style="margin: 0 100px 0 100px;">Very soon you will be able to view some pics so you can see what you can buy. ohh...</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>  
+
+
+<script type="text/javascript">
+  $(function () {
+  $('.tlt').textillate({
+     selector: '.texts',
+
+  // enable looping
+  loop: false,
+
+  // sets the minimum display time for each text before it is replaced
+  minDisplayTime: 1000,
+
+  // sets the initial delay before starting the animation
+  // (note that depending on the in effect you may need to manually apply
+  // visibility: hidden to the element before running this plugin)
+  initialDelay: 0,
+
+  // set whether or not to automatically start animating
+  autoStart: true,
+
+  // custom set of 'in' effects. This effects whether or not the
+  // character is shown/hidden before or after an animation
+  inEffects: [],
+
+  // custom set of 'out' effects
+  outEffects: [ 'hinge' ],
+
+  // in animation settings
+  in: {
+    // set the effect name
+    effect: 'fadeInUp',
+
+    // set the delay factor applied to each consecutive character
+    delayScale: 1.5,
+
+    // set the delay between each character
+    delay: 50,
+
+    // set to true to animate all the characters at the same time
+    sync: true,
+
+    // randomize the character sequence
+    // (note that shuffle doesn't make sense with sync = true)
+    shuffle: false,
+
+    // reverse the character sequence
+    // (note that reverse doesn't make sense with sync = true)
+    reverse: false,
+
+    // callback that executes once the animation has finished
+    callback: function () {}
+  },
+
+  // out animation settings.
+  out: {
+    effect: 'fadeInDown',
+    delayScale: 1.5,
+    delay: 50,
+    sync: false,
+    shuffle: false,
+    reverse: false,
+    callback: function () {}
+  },
+
+  // callback that executes once textillate has finished
+  callback: function () {},
+
+  // set the type of token to animate (available types: 'char' and 'word')
+  type: 'word'
+  }
+
+    );
+})
+</script>
+</body>
+</html>
