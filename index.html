@@ -19,10 +19,24 @@
     .content h1{
       padding-top: 300px;
       padding-bottom: 3em;
-      text-align: center;
-      
+      text-align: center; 
     }
+    @media only screen and (max-device-width: 900px) {
+      .mobilehe{
+        padding: 0 10em 0 10em;
+      }
+
+  }
+
+    /* .field{
+      margin: 0 23em 0 23em;
+     }*/
   </style>
+
+<script>
+  UPLOADCARE_PUBLIC_KEY = 'c54d14a86fb102d4d8cf';
+</script>
+
 </head>
 <body>
   <!-- Photo by Clarke Sanders on Unsplash -->
@@ -57,9 +71,9 @@
       <div class="navbar-item">
         <div class="field is-grouped">
           <p class="control">
-            <a class="bd-tw-button button" href="">
+            <a class="bd-tw-button button" href="https://picadoo.setmore.com">
               <span class="icon">
-                <!-- <i class="fa fa-twitter"></i> -->
+                <i class="fa fa-calendar" aria-hidden="true"></i>
               </span>
               <span>
                 Book Stylist
@@ -100,10 +114,42 @@
 			</div>
 		</div>
 	</section>
+
+  <section style="padding: 1rem;">
+    <div class="container mobilehe">
+      <!-- end of form -->
+      <div class="content">
+      <h1>  Upload your selfie or picture and let our stylists and beauticians give their opinions on the best #glowUp</h1>
+      </div>
+      <form>
+      <!--   <input type="hidden" role="uploadcare-uploader"
+                data-public-key="UPLOADCARE_PUBLIC_KEY"
+                data-images-only
+              /> -->
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Text input">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Upload your image</label>
+          <div class="control">
+            <input type="hidden" role="uploadcare-uploader" name="my_file" />
+          </div>
+        </div>
+
+      </form>
+      <!-- end of form -->
+    </div>
+  </section>
 	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>  
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script> -->
+<script src="https://ucarecdn.com/libs/widget/3.2.0/uploadcare.min.js" charset="utf-8"></script>
 
 
 <script type="text/javascript">
